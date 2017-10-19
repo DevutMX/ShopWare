@@ -82,7 +82,10 @@
   <ItemGroup>
     <Content Include="Images\Juegos\Wolfenstein.jpg" />
     <Content Include="Images\Juegos\YookaLaylee.jpg" />
+    <Content Include="Images\sistema\address.png" />
+    <Content Include="Images\sistema\email.png" />
     <Content Include="Images\sistema\favicon.ico" />
+    <Content Include="Images\sistema\phone.png" />
     <Content Include="Images\sistema\WinStore.png" />
     <Content Include="Images\sistema\WinStoreBlanco.png" />
     <Content Include="Images\Software\Adobe.jpg" />
