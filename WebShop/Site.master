@@ -5,7 +5,8 @@
 <head runat="server">
     <meta charset="UTF-8" />
     <title>WebShop</title>
-    <link href="~/Content/Site.css" rel="stylesheet" /> 
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link rel="icon" href="~/Images/sistema/favicon.ico" type="image/x-icon" />
 </head>
 <body>
     <form id="form1" runat="server">

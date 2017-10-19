@@ -74,6 +74,7 @@
     <Content Include="Images\Juegos\Doom.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\sistema\favicon.ico" />
     <Content Include="Site.master" />
   </ItemGroup>
   <ItemGroup>
