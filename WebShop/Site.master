@@ -7,11 +7,18 @@
     <title>WebShop</title>
     <link href="~/Content/Site.css" rel="stylesheet" />
     <link rel="icon" href="~/Images/sistema/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"/>
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"/>
     <style type="text/css">
         .auto-style1 {
             float: left;
             height: 38px;
             width: 60px;
+        }
+        .auto-style2 {
+            float: left;
+            height: 58px;
+            width: 69px;
         }
     </style>
 </head>
@@ -19,7 +26,7 @@
     <form id="form1" runat="server">
         <div class="content-wrapper">
             <div class="header">
-                <h1><img src="Images/sistema/WinStore.png" alt="WebShop" class="auto-style1" /> WebShop</h1>
+                <h1 "footer-left"><img src="Images/sistema/WinStore.png" alt="WebShop" class="auto-style1" /> WebShop</h1>
                 <dx:ASPxMenu ID="HeaderMenu" runat="server" ItemAutoWidth="False" Width="100%">
                     <items>
                         <dx:MenuItem Text="Inicio" NavigateUrl="~/Default.aspx"></dx:MenuItem>
@@ -52,11 +59,58 @@
                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
-
-            <div class="footer">
-                <p>&copy; <%: DateTime.Now.Year %> - A DevutMX Project</p>
-            </div>
         </div>
+
+        <footer class="footer-distributed">
+			<div class="footer-left">
+				<h3><img src="Images/sistema/WinStoreBlanco.png" alt="WebShop" class="auto-style2" /> WebShop</h3>
+				<p class="footer-links">
+					<a href="Default.aspx">Inicio</a>
+                    .
+					<a href="Juegos.aspx">Juegos</a>
+					·
+					<a href="#">Software</a>
+					·
+					<a href="#">Contacto</a>
+					·
+					<a href="#">Web Master</a>
+				</p>
+
+				<p class="footer-company-name">&copy; 2017 - A DevutMx Project</p>
+			</div>
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Orquideas #14</span> Iguala, México</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>(733) 104 7641</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@devutmx.com">support@devutmx.com</a></p>
+				</div>
+
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>Sobre nosotros</span>
+					Somos una empresa que se dedica a la venta de software vario, ya sean juegos, aplicaciones, etc. Importamos también de otros paises.
+				</p>
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+			</div>
+		</footer>
     </form>
 </body>
 </html>

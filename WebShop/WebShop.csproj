@@ -79,6 +79,7 @@
     <Content Include="Images\Juegos\YookaLaylee.jpg" />
     <Content Include="Images\sistema\favicon.ico" />
     <Content Include="Images\sistema\WinStore.png" />
+    <Content Include="Images\sistema\WinStoreBlanco.png" />
     <Content Include="Juegos.aspx" />
     <Content Include="Site.master" />
   </ItemGroup>
