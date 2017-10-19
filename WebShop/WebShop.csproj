@@ -70,6 +70,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Carrusel\Battlefront2.jpg" />
+    <Content Include="Images\Carrusel\Doom.jpg" />
+    <Content Include="Images\Carrusel\Office2016.jpg" />
+    <Content Include="Images\Carrusel\Windows10.jpg" />
     <Content Include="Images\Juegos\Battlefield1.jpg" />
     <Content Include="Images\Juegos\Battlefront2.jpg" />
     <Content Include="Images\Juegos\Doom.jpg" />
@@ -80,10 +84,16 @@
     <Content Include="Images\sistema\favicon.ico" />
     <Content Include="Images\sistema\WinStore.png" />
     <Content Include="Images\sistema\WinStoreBlanco.png" />
+    <Content Include="Images\Software\Adobe.jpg" />
+    <Content Include="Images\Software\Office2016.jpg" />
+    <Content Include="Images\Software\SQLServer2016.jpg" />
+    <Content Include="Images\Software\VS2017.jpg" />
+    <Content Include="Images\Software\Windows10.jpg" />
     <Content Include="Juegos.aspx" />
     <Content Include="Site.master" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Software.aspx" />
     <Content Include="Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -117,6 +127,13 @@
     </Compile>
     <Compile Include="Site.master.designer.cs">
       <DependentUpon>Site.master</DependentUpon>
+    </Compile>
+    <Compile Include="Software.aspx.cs">
+      <DependentUpon>Software.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Software.aspx.designer.cs">
+      <DependentUpon>Software.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

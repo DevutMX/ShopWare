@@ -32,9 +32,9 @@
                         <dx:MenuItem Text="Inicio" NavigateUrl="~/Default.aspx"></dx:MenuItem>
                         <dx:MenuItem Text="Productos">
                             <Items>
-                                <dx:MenuItem Text="Juegos">
+                                <dx:MenuItem Text="Juegos" NavigateUrl="~/Juegos.aspx">
                                 </dx:MenuItem>
-                                <dx:MenuItem Text="Software">
+                                <dx:MenuItem Text="Software" NavigateUrl="~/Software.aspx">
                                 </dx:MenuItem>
                             </Items>
                         </dx:MenuItem>
@@ -69,7 +69,7 @@
                     .
 					<a href="Juegos.aspx">Juegos</a>
 					·
-					<a href="#">Software</a>
+					<a href="Software.aspx">Software</a>
 					·
 					<a href="#">Contacto</a>
 					·

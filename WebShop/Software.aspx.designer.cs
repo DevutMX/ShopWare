@@ -10,7 +10,7 @@
 namespace WebShop {
     
     
-    public partial class Juegos {
+    public partial class Software {
         
         /// <summary>
         /// Control ASPxButton1.
