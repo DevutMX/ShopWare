@@ -94,6 +94,7 @@
     <Content Include="Images\Software\VS2017.jpg" />
     <Content Include="Images\Software\Windows10.jpg" />
     <Content Include="Juegos.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Site.master" />
   </ItemGroup>
   <ItemGroup>
@@ -130,6 +131,13 @@
     </Compile>
     <Compile Include="Juegos.aspx.designer.cs">
       <DependentUpon>Juegos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.master.cs">
