@@ -70,11 +70,16 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Juegos\Battlefield1.jpg" />
     <Content Include="Images\Juegos\Battlefront2.jpg" />
     <Content Include="Images\Juegos\Doom.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\Juegos\Wolfenstein.jpg" />
+    <Content Include="Images\Juegos\YookaLaylee.jpg" />
     <Content Include="Images\sistema\favicon.ico" />
+    <Content Include="Images\sistema\WinStore.png" />
+    <Content Include="Juegos.aspx" />
     <Content Include="Site.master" />
   </ItemGroup>
   <ItemGroup>
@@ -96,6 +101,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Juegos.aspx.cs">
+      <DependentUpon>Juegos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Juegos.aspx.designer.cs">
+      <DependentUpon>Juegos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.master.cs">

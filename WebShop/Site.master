@@ -7,12 +7,19 @@
     <title>WebShop</title>
     <link href="~/Content/Site.css" rel="stylesheet" />
     <link rel="icon" href="~/Images/sistema/favicon.ico" type="image/x-icon" />
+    <style type="text/css">
+        .auto-style1 {
+            float: left;
+            height: 38px;
+            width: 60px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div class="content-wrapper">
             <div class="header">
-                <h1>WebShop</h1>
+                <h1><img src="Images/sistema/WinStore.png" alt="WebShop" class="auto-style1" /> WebShop</h1>
                 <dx:ASPxMenu ID="HeaderMenu" runat="server" ItemAutoWidth="False" Width="100%">
                     <items>
                         <dx:MenuItem Text="Inicio" NavigateUrl="~/Default.aspx"></dx:MenuItem>
@@ -21,8 +28,6 @@
                                 <dx:MenuItem Text="Juegos">
                                 </dx:MenuItem>
                                 <dx:MenuItem Text="Software">
-                                </dx:MenuItem>
-                                <dx:MenuItem Text="Peliculas">
                                 </dx:MenuItem>
                             </Items>
                         </dx:MenuItem>
