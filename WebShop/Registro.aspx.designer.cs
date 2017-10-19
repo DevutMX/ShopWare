@@ -10,7 +10,7 @@
 namespace WebShop {
     
     
-    public partial class Login {
+    public partial class Registro {
         
         /// <summary>
         /// Control ASPxTextBox1.

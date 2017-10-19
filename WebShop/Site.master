@@ -43,9 +43,9 @@
                             <Items>
                                 <dx:MenuItem Text="Web Master">
                                 </dx:MenuItem>
-                                <dx:MenuItem Text="Acceder">
+                                <dx:MenuItem Text="Acceder" NavigateUrl="~/Login.aspx">
                                 </dx:MenuItem>
-                                <dx:MenuItem Text="Registrarse">
+                                <dx:MenuItem Text="Registrarse" NavigateUrl="~/Registro.aspx">
                                 </dx:MenuItem>
                                 <dx:MenuItem Text="Carrito">
                                 </dx:MenuItem>
@@ -73,7 +73,7 @@
 					·
 					<a href="Software.aspx">Software</a>
 					·
-					<a href="#">Contacto</a>
+					<a href="Contacto.aspx">Contacto</a>
 					·
 					<a href="#">Web Master</a>
 				</p>

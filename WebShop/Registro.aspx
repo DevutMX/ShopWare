@@ -1,20 +1,20 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.master" CodeBehind="Login.aspx.cs" Inherits="WebShop.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.master" CodeBehind="Registro.aspx.cs" Inherits="WebShop.Registro" %>
 
 <asp:Content ID="Content" ContentPlaceHolderID="MainContent" runat="server">
     <div align="center">
         <table>
             <tr>
-                <td><div align="center"><h1>Inicia sesión para continuar</h1></div></td>
+                <td><div align="center"><h1>¡Unete a WebShop ahora!</h1></div></td>
             </tr>
             <tr>
-                <td><div align="center"><img src="Images/sistema/Users.png" alt="Usuario" width="150" height="150" /></div></td>
+                <td><div align="center"><img src="Images/sistema/WinStore.png" alt="Usuario" width="150" height="150" /></div></td>
             </tr>
             <tr>
                 <td>
-                    <div align="left">Usuario:
+                    <div align="left">Nombre:
                         <dx:ASPxTextBox ID="ASPxTextBox1" runat="server" Width="100%" Font-Size="Medium">
                         </dx:ASPxTextBox>
-                        Contrase&ntilde;a:
+                        Domicilio:
                         <dx:ASPxTextBox ID="ASPxTextBox2" runat="server" Width="100%" Font-Size="Medium" Password="True">
                         </dx:ASPxTextBox>
                     </div>
