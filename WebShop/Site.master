@@ -38,7 +38,7 @@
                                 </dx:MenuItem>
                             </Items>
                         </dx:MenuItem>
-                        <dx:MenuItem Text="Contacto"></dx:MenuItem>
+                        <dx:MenuItem Text="Contacto" NavigateUrl="~/Contacto.aspx"></dx:MenuItem>
                         <dx:MenuItem Text="Usuario">
                             <Items>
                                 <dx:MenuItem Text="Web Master">
@@ -46,6 +46,8 @@
                                 <dx:MenuItem Text="Acceder">
                                 </dx:MenuItem>
                                 <dx:MenuItem Text="Registrarse">
+                                </dx:MenuItem>
+                                <dx:MenuItem Text="Carrito">
                                 </dx:MenuItem>
                             </Items>
                         </dx:MenuItem>
