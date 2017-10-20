@@ -4,7 +4,7 @@
     <div>
         <table width="100%">
             <tr>
-                <th colspan="3"><div align="center">Opciones disponibles</div></th>
+                <th colspan="3"><div align="center"><h1>Opciones disponibles</h1></div></th>
             </tr>
             <tr>
                 <td width="33%"><div align="center"><a href="#"><img src="Images/sistema/Clientes.png" alt="Clientes"/><br />Clientes</a></div></td>
