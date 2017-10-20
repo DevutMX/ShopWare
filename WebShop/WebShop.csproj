@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Contacto.aspx" />
     <Content Include="Content\Site.css" />
+    <Content Include="Dashboard.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Images\Carrusel\Battlefront2.jpg" />
@@ -83,10 +84,15 @@
     <Content Include="Images\Juegos\Wolfenstein.jpg" />
     <Content Include="Images\Juegos\YookaLaylee.jpg" />
     <Content Include="Images\sistema\address.png" />
+    <Content Include="Images\sistema\Cerrar.png" />
+    <Content Include="Images\sistema\Clientes.png" />
     <Content Include="Images\sistema\email.png" />
     <Content Include="Images\sistema\favicon.ico" />
+    <Content Include="Images\sistema\Pago.png" />
     <Content Include="Images\sistema\phone.png" />
     <Content Include="Images\sistema\Users.png" />
+    <Content Include="Images\sistema\Usuarios.png" />
+    <Content Include="Images\sistema\Ventas.png" />
     <Content Include="Images\sistema\WinStore.png" />
     <Content Include="Images\sistema\WinStoreBlanco.png" />
     <Content Include="Images\Software\Adobe.jpg" />
@@ -102,6 +108,7 @@
   <ItemGroup>
     <Content Include="Software.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Backend.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -110,12 +117,26 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Backend.Master.cs">
+      <DependentUpon>Backend.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Backend.Master.designer.cs">
+      <DependentUpon>Backend.Master</DependentUpon>
+    </Compile>
     <Compile Include="Contacto.aspx.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contacto.aspx.designer.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
