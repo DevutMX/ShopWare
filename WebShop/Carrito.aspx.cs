@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace WebShop
 {
-    public partial class Registro : Page
+    public partial class Carrito : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void btnAcceder_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/Login.aspx");
         }
     }
 }

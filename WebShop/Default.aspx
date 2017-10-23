@@ -22,7 +22,7 @@
             <tr>
                 <td><p align="center"><b>DOOM</b></p></td>
                 <td><b>Tags:</b>   FPS, Shooter, Demonios</td>
-                <td><div align="center"><dx:ASPxButton ID="ASPxButton1" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White"></dx:ASPxButton></div></td>
+                <td><div align="center"><dx:ASPxButton ID="btnDoom" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White" OnClick="btnDoom_Click"></dx:ASPxButton></div></td>
             </tr>
             <tr>
                 <td></td>
@@ -43,7 +43,7 @@
             <tr>
                 <td><p align="center"><b>Microsoft Windows 10</b></p></td>
                 <td><b>Tags:</b>   Sistemas Operativos, Windows, 10</td>
-                <td><div align="center"><dx:ASPxButton ID="ASPxButton2" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White"></dx:ASPxButton></div></td>
+                <td><div align="center"><dx:ASPxButton ID="btnWindows" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White" OnClick="btnWindows_Click"></dx:ASPxButton></div></td>
             </tr>
             <tr>
                 <td></td>
@@ -66,7 +66,7 @@ Battlefield 1 Revolution te permite participar en la Gran Guerra a través de eno
             <tr>
                 <td><p align="center"><b>Battlefield 1</b></p></td>
                 <td><b>Tags:</b>   WWII, Shooter, Historico</td>
-                <td><div align="center"><dx:ASPxButton ID="ASPxButton3" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White"></dx:ASPxButton></div></td>
+                <td><div align="center"><dx:ASPxButton ID="btnBattlefield" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White" OnClick="btnBattlefield_Click"></dx:ASPxButton></div></td>
             </tr>
             <tr>
                 <td></td>
@@ -89,7 +89,7 @@ Battlefield 1 Revolution te permite participar en la Gran Guerra a través de eno
             <tr>
                 <td><p align="center"><b>Microsoft Office 2016 Professional</b></p></td>
                 <td><b>Tags:</b>   Microsoft, Office, Oficina</td>
-                <td><div align="center"><dx:ASPxButton ID="ASPxButton4" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White"></dx:ASPxButton></div></td>
+                <td><div align="center"><dx:ASPxButton ID="btnOffice" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White" OnClick="btnOffice_Click"></dx:ASPxButton></div></td>
             </tr>
             <tr>
                 <td></td>
@@ -110,7 +110,7 @@ Battlefield 1 Revolution te permite participar en la Gran Guerra a través de eno
             <tr>
                 <td><p align="center"><b>Wolfenstein II The new colossus</b></p></td>
                 <td><b>Tags:</b>   Shooter, FPS, WWII</td>
-                <td><div align="center"><dx:ASPxButton ID="ASPxButton5" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White"></dx:ASPxButton></div></td>
+                <td><div align="center"><dx:ASPxButton ID="btnWolfenstein" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White" OnClick="btnWolfenstein_Click"></dx:ASPxButton></div></td>
             </tr>
             <tr>
                 <td></td>

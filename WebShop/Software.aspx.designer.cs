@@ -13,48 +13,48 @@ namespace WebShop {
     public partial class Software {
         
         /// <summary>
-        /// Control ASPxButton1.
+        /// Control btnwindows.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxButton ASPxButton1;
+        protected global::DevExpress.Web.ASPxButton btnwindows;
         
         /// <summary>
-        /// Control ASPxButton2.
+        /// Control btnVisual.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxButton ASPxButton2;
+        protected global::DevExpress.Web.ASPxButton btnVisual;
         
         /// <summary>
-        /// Control ASPxButton3.
+        /// Control btnOffice.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxButton ASPxButton3;
+        protected global::DevExpress.Web.ASPxButton btnOffice;
         
         /// <summary>
-        /// Control ASPxButton4.
+        /// Control btnSQL.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxButton ASPxButton4;
+        protected global::DevExpress.Web.ASPxButton btnSQL;
         
         /// <summary>
-        /// Control ASPxButton5.
+        /// Control btnAdobe.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxButton ASPxButton5;
+        protected global::DevExpress.Web.ASPxButton btnAdobe;
     }
 }

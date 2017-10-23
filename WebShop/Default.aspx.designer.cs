@@ -22,48 +22,48 @@ namespace WebShop {
         protected global::DevExpress.Web.ASPxImageSlider ASPxImageSlider1;
         
         /// <summary>
-        /// Control ASPxButton1.
+        /// Control btnDoom.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxButton ASPxButton1;
+        protected global::DevExpress.Web.ASPxButton btnDoom;
         
         /// <summary>
-        /// Control ASPxButton2.
+        /// Control btnWindows.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxButton ASPxButton2;
+        protected global::DevExpress.Web.ASPxButton btnWindows;
         
         /// <summary>
-        /// Control ASPxButton3.
+        /// Control btnBattlefield.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxButton ASPxButton3;
+        protected global::DevExpress.Web.ASPxButton btnBattlefield;
         
         /// <summary>
-        /// Control ASPxButton4.
+        /// Control btnOffice.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxButton ASPxButton4;
+        protected global::DevExpress.Web.ASPxButton btnOffice;
         
         /// <summary>
-        /// Control ASPxButton5.
+        /// Control btnWolfenstein.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxButton ASPxButton5;
+        protected global::DevExpress.Web.ASPxButton btnWolfenstein;
     }
 }

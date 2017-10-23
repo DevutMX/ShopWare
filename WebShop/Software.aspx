@@ -16,7 +16,7 @@
             <tr>
                 <td><p align="center"><b>Microsoft Windows 10</b></p></td>
                 <td><b>Tags:</b>   Sistemas Operativos, Windows, 10</td>
-                <td><div align="center"><dx:ASPxButton ID="ASPxButton1" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White"></dx:ASPxButton></div></td>
+                <td><div align="center"><dx:ASPxButton ID="btnwindows" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White" OnClick="btnwindows_Click"></dx:ASPxButton></div></td>
             </tr>
             <tr>
                 <td></td>
@@ -37,7 +37,7 @@
             <tr>
                 <td><p align="center"><b>Microsoft Visual Studio 2017 Enterprise</b></p></td>
                 <td><b>Tags:</b>   IDE, Microsoft, Visual Studio</td>
-                <td><div align="center"><dx:ASPxButton ID="ASPxButton2" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White"></dx:ASPxButton></div></td>
+                <td><div align="center"><dx:ASPxButton ID="btnVisual" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White" OnClick="btnVisual_Click"></dx:ASPxButton></div></td>
             </tr>
             <tr>
                 <td></td>
@@ -58,7 +58,7 @@
             <tr>
                 <td><p align="center"><b>Microsoft Office 2016 Professional</b></p></td>
                 <td><b>Tags:</b>   Microsoft, Office, Oficina</td>
-                <td><div align="center"><dx:ASPxButton ID="ASPxButton3" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White"></dx:ASPxButton></div></td>
+                <td><div align="center"><dx:ASPxButton ID="btnOffice" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White" OnClick="btnOffice_Click"></dx:ASPxButton></div></td>
             </tr>
             <tr>
                 <td></td>
@@ -80,7 +80,7 @@ El lenguaje de desarrollo utilizado (por línea de comandos o mediante la interf
             <tr>
                 <td><p align="center"><b>Microsoft SQL Server 2016</b></p></td>
                 <td><b>Tags:</b>   Base de datos, Microsoft, SQL</td>
-                <td><div align="center"><dx:ASPxButton ID="ASPxButton4" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White"></dx:ASPxButton></div></td>
+                <td><div align="center"><dx:ASPxButton ID="btnSQL" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White" OnClick="btnSQL_Click"></dx:ASPxButton></div></td>
             </tr>
             <tr>
                 <td></td>
@@ -102,7 +102,7 @@ Adobe CC, trabaja a partir de un modelo de software como servicio, donde los con
             <tr>
                 <td><p align="center"><b>Adobe Creative Cloud 1 año</b></p></td>
                 <td><b>Tags:</b>   Diseño, Adobe, Photoshop</td>
-                <td><div align="center"><dx:ASPxButton ID="ASPxButton5" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White"></dx:ASPxButton></div></td>
+                <td><div align="center"><dx:ASPxButton ID="btnAdobe" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White" OnClick="btnAdobe_Click"></dx:ASPxButton></div></td>
             </tr>
             <tr>
                 <td></td>

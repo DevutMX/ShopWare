@@ -16,7 +16,7 @@
             <tr>
                 <td><p align="center"><b>DOOM</b></p></td>
                 <td><b>Tags:</b>   FPS, Shooter, Demonios</td>
-                <td><div align="center"><dx:ASPxButton ID="ASPxButton1" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White"></dx:ASPxButton></div></td>
+                <td><div align="center"><dx:ASPxButton ID="btnDoom" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White" OnClick="btnDoom_Click"></dx:ASPxButton></div></td>
             </tr>
             <tr>
                 <td></td>
@@ -37,7 +37,7 @@
             <tr>
                 <td><p align="center"><b>Star Wars Battlefront II</b></p></td>
                 <td><b>Tags:</b>   Ciencia Ficción, Espacio, Batallas</td>
-                <td><div align="center"><dx:ASPxButton ID="ASPxButton2" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White"></dx:ASPxButton></div></td>
+                <td><div align="center"><dx:ASPxButton ID="btnStarWars" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White" OnClick="btnStarWars_Click"></dx:ASPxButton></div></td>
             </tr>
             <tr>
                 <td></td>
@@ -60,7 +60,7 @@ Battlefield 1 Revolution te permite participar en la Gran Guerra a través de en
             <tr>
                 <td><p align="center"><b>Battlefield 1</b></p></td>
                 <td><b>Tags:</b>   WWII, Shooter, Historico</td>
-                <td><div align="center"><dx:ASPxButton ID="ASPxButton3" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White"></dx:ASPxButton></div></td>
+                <td><div align="center"><dx:ASPxButton ID="btnBattlefield" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White" OnClick="btnBattlefield_Click"></dx:ASPxButton></div></td>
             </tr>
             <tr>
                 <td></td>
@@ -83,7 +83,7 @@ Explora mundos vastos y preciosos, conoce (y vence) a un reparto inolvidable de 
             <tr>
                 <td><p align="center"><b>Yooka & Laylee</b></p></td>
                 <td><b>Tags:</b>   Plataformas, Cartoon, Aventura</td>
-                <td><div align="center"><dx:ASPxButton ID="ASPxButton4" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White"></dx:ASPxButton></div></td>
+                <td><div align="center"><dx:ASPxButton ID="btnYooka" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White" OnClick="btnYooka_Click"></dx:ASPxButton></div></td>
             </tr>
             <tr>
                 <td></td>
@@ -102,9 +102,9 @@ Explora mundos vastos y preciosos, conoce (y vence) a un reparto inolvidable de 
                 <td><p align="center">$ 1,099.00 MXN</p></td>
             </tr>
             <tr>
-                <td><p align="center"><b>Wolfenstein II The new colossuss</b></p></td>
+                <td><p align="center"><b>Wolfenstein II The new colossus</b></p></td>
                 <td><b>Tags:</b>   Shooter, FPS, WWII</td>
-                <td><div align="center"><dx:ASPxButton ID="ASPxButton5" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White"></dx:ASPxButton></div></td>
+                <td><div align="center"><dx:ASPxButton ID="btnWolfenstein" runat="server" Text="Comprar" BackColor="#009900" ForeColor="White" OnClick="btnWolfenstein_Click"></dx:ASPxButton></div></td>
             </tr>
             <tr>
                 <td></td>

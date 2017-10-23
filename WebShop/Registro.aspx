@@ -12,10 +12,28 @@
             <tr>
                 <td>
                     <div align="left">Nombre:
-                        <dx:ASPxTextBox ID="ASPxTextBox1" runat="server" Width="100%" Font-Size="Medium">
+                        <dx:ASPxTextBox ID="txtNombre" runat="server" Width="100%" Font-Size="Medium">
+                        </dx:ASPxTextBox>
+                        Apellidos:
+                        <dx:ASPxTextBox ID="txtApellidos" runat="server" Width="100%" Font-Size="Medium">
                         </dx:ASPxTextBox>
                         Domicilio:
-                        <dx:ASPxTextBox ID="ASPxTextBox2" runat="server" Width="100%" Font-Size="Medium" Password="True">
+                        <dx:ASPxTextBox ID="txtDomicilio" runat="server" Width="100%" Font-Size="Medium">
+                        </dx:ASPxTextBox>
+                        Correo:
+                        <dx:ASPxTextBox ID="txtCorreo" runat="server" Width="100%" Font-Size="Medium">
+                        </dx:ASPxTextBox>
+                        Foto:
+                        <dx:ASPxUploadControl ID="uploadFoto" runat="server" UploadMode="Auto" Width="100%">
+                        </dx:ASPxUploadControl>
+                        Teléfono:
+                        <dx:ASPxTextBox ID="txtTelefono" runat="server" Width="100%" Font-Size="Medium">
+                        </dx:ASPxTextBox>
+                        Usuario:
+                        <dx:ASPxTextBox ID="txtUsuario" runat="server" Width="100%" Font-Size="Medium">
+                        </dx:ASPxTextBox>
+                        Contraseña:
+                        <dx:ASPxTextBox ID="txtPassword" runat="server" Width="100%" Font-Size="Medium" Password="True">
                         </dx:ASPxTextBox>
                     </div>
                 </td>
@@ -24,11 +42,11 @@
                 <td>
                     <div align="center" width="100%" height="100%">
                         <div style="float: left;">
-                            <dx:ASPxButton ID="ASPxButton1" runat="server" Text="Registrate">
+                            <dx:ASPxButton ID="btnRegistrarte" runat="server" Text="Registrate">
                             </dx:ASPxButton>
                         </div>
                         <div style="float: right;">
-                            <dx:ASPxButton ID="ASPxButton2" runat="server" Text="Acceder">
+                            <dx:ASPxButton ID="btnAcceder" runat="server" Text="Acceder" OnClick="btnAcceder_Click">
                             </dx:ASPxButton>
                         </div>
                     </div>
