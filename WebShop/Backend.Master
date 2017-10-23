@@ -29,10 +29,12 @@
                 <h1 "footer-left"><img src="Images/sistema/WinStore.png" alt="WebShop" class="auto-style1" /> WebShop</h1>
                 <dx:ASPxMenu ID="HeaderMenu" runat="server" ItemAutoWidth="False" Width="100%">
                     <items>
-                        <dx:MenuItem Text="Clientes"></dx:MenuItem>
-                        <dx:MenuItem Text="Ventas">
+                        <dx:MenuItem Text="Clientes" NavigateUrl="~/Clientes.aspx"></dx:MenuItem>
+                        <dx:MenuItem Text="Ventas" NavigateUrl="~/Ventas.aspx">
                         </dx:MenuItem>
-                        <dx:MenuItem Text="Usuarios"></dx:MenuItem>
+                        <dx:MenuItem Text="Usuarios" NavigateUrl="~/Usuarios.aspx"></dx:MenuItem>
+                        <dx:MenuItem NavigateUrl="~/Balance.aspx" Text="Balance">
+                        </dx:MenuItem>
                         <dx:MenuItem Text="Cerrar">
                         </dx:MenuItem>
                     </items>

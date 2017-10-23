@@ -67,10 +67,13 @@
     <Reference Include="DevExpress.Web.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Balance.aspx" />
+    <Content Include="Clientes.aspx" />
     <Content Include="Contacto.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Dashboard.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="FormasPago.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Images\Carrusel\Battlefront2.jpg" />
     <Content Include="Images\Carrusel\Doom.jpg" />
@@ -90,6 +93,7 @@
     <Content Include="Images\sistema\favicon.ico" />
     <Content Include="Images\sistema\Pago.png" />
     <Content Include="Images\sistema\phone.png" />
+    <Content Include="Images\sistema\SaldoDisponible.png" />
     <Content Include="Images\sistema\Users.png" />
     <Content Include="Images\sistema\Usuarios.png" />
     <Content Include="Images\sistema\Ventas.png" />
@@ -107,6 +111,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Software.aspx" />
+    <Content Include="Usuarios.aspx" />
+    <Content Include="Ventas.aspx" />
     <Content Include="Web.config" />
     <Content Include="Backend.Master" />
     <None Include="Web.Debug.config">
@@ -123,6 +129,20 @@
     </Compile>
     <Compile Include="Backend.Master.designer.cs">
       <DependentUpon>Backend.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Balance.aspx.cs">
+      <DependentUpon>Balance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Balance.aspx.designer.cs">
+      <DependentUpon>Balance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.aspx.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Clientes.aspx.designer.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contacto.aspx.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
@@ -144,6 +164,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormasPago.aspx.cs">
+      <DependentUpon>FormasPago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormasPago.aspx.designer.cs">
+      <DependentUpon>FormasPago.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -183,6 +210,20 @@
     </Compile>
     <Compile Include="Software.aspx.designer.cs">
       <DependentUpon>Software.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas.aspx.cs">
+      <DependentUpon>Ventas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ventas.aspx.designer.cs">
+      <DependentUpon>Ventas.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

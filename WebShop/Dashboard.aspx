@@ -7,13 +7,14 @@
                 <th colspan="3"><div align="center"><h1>Opciones disponibles</h1></div></th>
             </tr>
             <tr>
-                <td width="33%"><div align="center"><a href="#"><img src="Images/sistema/Clientes.png" alt="Clientes"/><br />Clientes</a></div></td>
-                <td width="33%"><div align="center"><a href="#"><img src="Images/sistema/Ventas.png" alt="Ventas"/><br />Ventas</a></div></td>
-                <td width="33%"><div align="center"><a href="#"><img src="Images/sistema/Usuarios.png" alt="Usuarios"/><br />Usuarios</a></div></td>
+                <td width="33%"><div align="center"><a href="Clientes.aspx"><img src="Images/sistema/Clientes.png" alt="Clientes"/><br />Clientes</a></div></td>
+                <td width="33%"><div align="center"><a href="Ventas.aspx"><img src="Images/sistema/Ventas.png" alt="Ventas"/><br />Ventas</a></div></td>
+                <td width="33%"><div align="center"><a href="Usuarios.aspx"><img src="Images/sistema/Usuarios.png" alt="Usuarios"/><br />Usuarios</a></div></td>
             </tr>
             <tr>
-                <td width="33%"><div align="center"><a href="#"><img src="Images/sistema/Pago.png" alt="Formas de pago"/><br />Formas de pago</a></div></td>
+                <td width="33%"><div align="center"><a href="FormasPago.aspx"><img src="Images/sistema/Pago.png" alt="Formas de pago"/><br />Formas de pago</a></div></td>
                 <td width="33%"><div align="center"><a href="#"><img src="Images/sistema/Cerrar.png" alt="Cerrar Sesion"/><br />Cerrar Sesión</a></div></td>
+                <td width="33%"><div align="center"><a href="Balance.aspx"><img src="Images/sistema/SaldoDisponible.png" alt="Balance"/><br />Balance</a></div></td>
             </tr>
         </table>
     </div>
