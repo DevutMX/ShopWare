@@ -162,6 +162,7 @@
     </Compile>
     <Compile Include="Controllers\Kernel.cs" />
     <Compile Include="Controllers\Secret.cs" />
+    <Compile Include="Controllers\Structures.cs" />
     <Compile Include="Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

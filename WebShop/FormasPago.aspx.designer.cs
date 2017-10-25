@@ -11,5 +11,32 @@ namespace WebShop {
     
     
     public partial class FormasPago {
+        
+        /// <summary>
+        /// Control ASPxDropDownEdit1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxDropDownEdit ASPxDropDownEdit1;
+        
+        /// <summary>
+        /// Control ASPxTextBox1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox ASPxTextBox1;
+        
+        /// <summary>
+        /// Control ASPxButton1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxButton ASPxButton1;
     }
 }

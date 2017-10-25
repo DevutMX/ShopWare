@@ -4,6 +4,13 @@
 	Saldo DECIMAL(10,2) NOT NULL
 );
 
+CREATE TABLE TiposPago
+(
+	Tipo INTEGER IDENTITY(1,1) PRIMARY KEY,
+	Descripcion varchar(40) not null,
+	RequiereTarjeta bit not null
+);
+
 CREATE TABLE Empresa
 (
 	Id INTEGER IDENTITY(1,1) PRIMARY KEY,
@@ -60,6 +67,7 @@ CREATE TABLE Venta
 (
 	Ticket varchar(20) PRIMARY KEY,
 	Total DECIMAL(10,2) NOT NULL,
+	TipoPago integer references TiposPago(Tipo),
 	Cliente INTEGER REFERENCES DatosClientes(id)
 );
 
