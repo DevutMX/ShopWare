@@ -160,6 +160,7 @@
     <Compile Include="Contacto.aspx.designer.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\Bridge.cs" />
     <Compile Include="Controllers\Kernel.cs" />
     <Compile Include="Controllers\Secret.cs" />
     <Compile Include="Controllers\Structures.cs" />

@@ -1,29 +1,36 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WebShop.Controllers;
 
 namespace WebShop {
     public partial class _Default : Page
     {
-        protected void Page_Load(object sender, EventArgs e) {
-
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            
         }
+
+        Kernel _kernel = new Kernel();
 
         private void VerificarUsuarioParaAgregarProducto(int producto)
         {
             try
             {
-                if (HttpContext.Current.Session["Usuario"] != null)
+                if (Session["Usuario"] != null && Session["IdUsuario"] != null && Session["Privilegio"] != null)
                 {
-                    
+                    _kernel.MessageBox("Bienvenido " + Session["Usuario"], this, this);
                 }
 
                 else
                 {
-                    ScriptManager.RegisterClientScriptBlock(this, GetType(), "Aviso", "alert('Por favor inicia sesión para comprar')", true);
+                    _kernel.MessageBox("Por favor inicia sesión para poder comprar", this, this);
+
+                    Thread.Sleep(2000);
 
                     Response.Redirect("~/Login.aspx");
                 }

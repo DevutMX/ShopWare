@@ -12,10 +12,10 @@
             <tr>
                 <td>
                     <div align="left">Usuario:
-                        <dx:ASPxTextBox ID="ASPxTextBox1" runat="server" Width="100%" Font-Size="Medium">
+                        <dx:ASPxTextBox ID="txtUsuario" runat="server" Width="100%" Font-Size="Medium">
                         </dx:ASPxTextBox>
                         Contrase&ntilde;a:
-                        <dx:ASPxTextBox ID="ASPxTextBox2" runat="server" Width="100%" Font-Size="Medium" Password="True">
+                        <dx:ASPxTextBox ID="txtContrasena" runat="server" Width="100%" Font-Size="Medium" Password="True">
                         </dx:ASPxTextBox>
                     </div>
                 </td>
@@ -24,11 +24,11 @@
                 <td>
                     <div align="center" width="100%" height="100%">
                         <div style="float: left;">
-                            <dx:ASPxButton ID="ASPxButton1" runat="server" Text="Registrate">
+                            <dx:ASPxButton ID="btnRegistrate" runat="server" Text="Registrate">
                             </dx:ASPxButton>
                         </div>
                         <div style="float: right;">
-                            <dx:ASPxButton ID="ASPxButton2" runat="server" Text="Acceder">
+                            <dx:ASPxButton ID="btnAcceder" runat="server" Text="Acceder" OnClick="btnAcceder_Click">
                             </dx:ASPxButton>
                         </div>
                     </div>

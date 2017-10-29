@@ -38,15 +38,23 @@ CREATE TABLE Productos
 	Categoria integer REFERENCES Categoria(Id)
 );
 
+create table usuarios
+(
+	Id integer identity(1,1) primary key,
+	Usuario varchar(40) not null,
+	Contrasena varchar(512) not null,
+	Correo varchar(40) not null,
+	Privilegio varchar(40) not null
+);
+
 CREATE TABLE DatosClientes
 (
 	Id INTEGER IDENTITY(1,1) PRIMARY KEY,
-	Usuario VARCHAR(40) NOT NULL,
-	Contrasena VARCHAR(512) NOT NULL,
-	Correo VARCHAR(40) NOT NULL,
+	Usuario integer references Usuarios(Id),
 	Nombre VARCHAR(50) NOT NULL,
 	Apellidos VARCHAR(50) NOT NULL,
 	Telefono VARCHAR(20) NOT NULL,
+	Domicilio varchar(256) not null,
 	Foto varbinary(max),
 	Tarjeta NUMERIC(16) REFERENCES Banco(Tarjeta),
 	Mes numeric(2) NOT null,
@@ -76,7 +84,9 @@ insert into categoria(Descripcion) values
 ('Software');
 
 insert into Banco values
+(1, 0),
 (4152312377392144, 0);
+
 
 insert into Empresa (RazonSocial, Direccion, RFC, Telefono, Correo, Tarjeta) values
 ('WebShop', 'Orquideas 14 PPG, Iguala. Gro.', 'WBSP171022I93', '7331047641', 'support@devutmx.com', 4152312377392144);

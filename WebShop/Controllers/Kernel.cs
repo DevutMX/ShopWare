@@ -23,5 +23,13 @@ namespace WebShop.Controllers
             imageIn.Save(ms, ImageFormat.Jpeg);
             return ms.ToArray();
         }
+
+        public void MessageBox(string mensaje, Page pagina, Object objeto)
+        {
+            string contexto = "<SCRIPT language='javascript'>alert('" + mensaje.Replace("\r\n", "\\n").Replace("'", "") + "'); </SCRIPT>";
+            Type cstype = objeto.GetType();
+            ClientScriptManager cs = pagina.ClientScript;
+            cs.RegisterClientScriptBlock(cstype, contexto, contexto.ToString());
+        }
     }
 }
