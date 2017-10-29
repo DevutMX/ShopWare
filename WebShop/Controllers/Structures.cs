@@ -63,13 +63,13 @@ namespace WebShop.Controllers
         public short CVV { get; set; }
     }
 
-    public class Carrito
+    public class EnCarrito
     {
         public int Id { get; set; }
         public int IdProducto { get; set; }
         public decimal Precio { get; set; }
         public string Ticket { get; set; }
-        public int Cliente { get; set; }
+        public int Usuario { get; set; }
     }
 
     public class Venta

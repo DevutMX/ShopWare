@@ -68,7 +68,7 @@ CREATE TABLE Carrito
 	IdProducto INTEGER REFERENCES Productos(Id),
 	Precio DECIMAL(10,2) NOT NULL,
 	Ticket VARCHAR(20) NOT NULL,
-	Cliente INTEGER REFERENCES DatosClientes(id)
+	Usuario INTEGER REFERENCES Usuarios(id)
 );
 
 CREATE TABLE Venta

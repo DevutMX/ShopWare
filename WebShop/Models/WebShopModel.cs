@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Data;
 using WebShop.Controllers;
 using System.Web.UI;
+using DevExpress.Web;
 
 namespace WebShop.Models
 {
@@ -111,7 +112,7 @@ namespace WebShop.Models
                             cmd.Parameters.AddWithValue("@j", cliente.CVV);
 
                             return cmd.ExecuteNonQuery() > 0 ? true : false;
-                            
+
                         }
                     }
 
@@ -159,6 +160,62 @@ namespace WebShop.Models
             catch (Exception)
             {
                 return null;
+            }
+        }
+
+        public bool AgregarAlCarrito(EnCarrito compra)
+        {
+            try
+            {
+                using (cnn = new SqlConnection(_cadenaConexion))
+                {
+                    string query = "INSERT INTO Carrito(IdProducto, Precio, Ticket, Usuario) VALUES (@a, @b, @c, @d)";
+
+                    cnn.Open();
+
+                    cmd = new SqlCommand(query, cnn);
+                    cmd.Parameters.AddWithValue("@a", compra.IdProducto);
+                    cmd.Parameters.AddWithValue("@b", compra.Precio);
+                    cmd.Parameters.AddWithValue("@c", compra.Ticket);
+                    cmd.Parameters.AddWithValue("@d", compra.Usuario);
+
+                    return cmd.ExecuteNonQuery() > 0 ? true : false;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public void ObtenerFormasPago(ASPxDropDownEdit aRellenar)
+        {
+            try
+            {
+                using (cnn = new SqlConnection(_cadenaConexion))
+                {
+                    string query = "SELECT Descripcion FROM TiposPago";
+
+                    cnn.Open();
+
+                    cmd = new SqlCommand(query, cnn);
+
+                    leer = cmd.ExecuteReader();
+                    
+                    aRellenar.Items
+
+
+                    while (leer.Read())
+                    {
+
+                    }
+
+                    leer.Close();
+                }
+            }
+            catch (Exception)
+            {
+                
             }
         }
     }

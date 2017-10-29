@@ -13,13 +13,13 @@ namespace WebShop {
     public partial class FormasPago {
         
         /// <summary>
-        /// Control ASPxDropDownEdit1.
+        /// Control cbxFormasPago.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxDropDownEdit ASPxDropDownEdit1;
+        protected global::DevExpress.Web.ASPxDropDownEdit cbxFormasPago;
         
         /// <summary>
         /// Control ASPxTextBox1.

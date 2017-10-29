@@ -12,7 +12,7 @@
                     </div>
                 </td>
                 <td>
-                    <dx:ASPxDropDownEdit ID="ASPxDropDownEdit1" runat="server" Height="16px" Width="382px">
+                    <dx:ASPxDropDownEdit ID="cbxFormasPago" runat="server" Height="16px" Width="382px">
                     </dx:ASPxDropDownEdit>
                 </td>
             </tr>
