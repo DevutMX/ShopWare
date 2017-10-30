@@ -30998,112 +30998,98 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.barExport_BMP">
             <summary>
-                <para>This field is now obsolete. Use the <b>SaveDlg_FilterBmp</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.barExport_CSV_Document">
             <summary>
-                <para>This field is now obsolete. Use the <b>MenuItem_CsvDocument</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.barExport_EMF">
             <summary>
-                <para>This field is now obsolete. Use the <b>SaveDlg_FilterEmf</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.barExport_Excel_Document">
             <summary>
-                <para>This field is now obsolete. Use the <b>MenuItem_XlsDocument</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.barExport_GIF">
             <summary>
-                <para>This field is now obsolete. Use the <b>SaveDlg_FilterGif</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.barExport_HTMLDocument">
             <summary>
-                <para>This field is now obsolete. Use the <b>MenuItem_HtmDocument</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.barExport_JPEG">
             <summary>
-                <para>This field is now obsolete. Use the <b>SaveDlg_FilterJpeg</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.barExport_MHT_Document">
             <summary>
-                <para>This field is now obsolete. Use the <b>MenuItem_MhtDocument</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.barExport_PDF_Document">
             <summary>
-                <para>This field is now obsolete. Use the <b>MenuItem_PdfDocument</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.barExport_PNG">
             <summary>
-                <para>This field is now obsolete. Use the <b>SaveDlg_FilterPng</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.barExport_RichTextDocument">
             <summary>
-                <para>This field is now obsolete. Use the <b>MenuItem_RtfDocument</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.barExport_Text_Document">
             <summary>
-                <para>This field is now obsolete. Use the <b>MenuItem_TxtDocument</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.barExport_TIFF">
             <summary>
-                <para>This field is now obsolete. Use the <b>SaveDlg_FilterTiff</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.barExport_WMF">
             <summary>
-                <para>This field is now obsolete. Use the <b>SaveDlg_FilterWmf</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -31166,16 +31152,14 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.dlgSaveAs">
             <summary>
-                <para>This field is now obsolete. Use the <b>SaveDlg_Title</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.dlgSendFrom">
             <summary>
-                <para>This field is now obsolete. Use the <b>EMail_From</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -31286,8 +31270,7 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.EmptyString">
             <summary>
-                <para>This field is now obsolete.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -31655,9 +31638,7 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.ExportOption_PdfCompressed">
             <summary>
-                <para>This member has become obsolete.
-
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -32085,8 +32066,7 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.ExportOption_XlsUseNativeFormat">
             <summary>
-                <para>This member has become obsolete.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -32655,11 +32635,7 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.MPE_PagesLabel">
             <summary>
-                <para>This field is now obsolete. Use the <b>MPForm_Lbl_Pages</b> field, instead.
-
-
-
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -32802,24 +32778,21 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_FileDoesNotHavePrnxExtention">
             <summary>
-                <para>Use the <see cref="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_FileDoesNotHavePrnxExtension"/> field instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_FileDosntContainValidXml">
             <summary>
-                <para>Use the <see cref="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_FileDoesNotContainValidXml"/> field instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_FileDosntHavePrnxExtention">
             <summary>
-                <para>Use the <see cref="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_FileDoesNotHavePrnxExtension"/> field instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -32979,24 +32952,21 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_SearchDialogFinishedSearching">
             <summary>
-                <para>"<b>Finished searching through the document</b>"
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_SearchDialogReady">
             <summary>
-                <para>"<b>Ready</b>"
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Msg_SearchDialogTotalFound">
             <summary>
-                <para>"<b>Total found: </b>"
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -33108,8 +33078,7 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Page_Scroll">
             <summary>
-                <para>This field is now obsolete. Use the <b>ScrollingInfo_Page</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -33198,112 +33167,98 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.PCE_AlignBottoms_ToolTip">
             <summary>
-                <para>This field is now obsolete.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.PCE_AlignMiddles_ToolTip">
             <summary>
-                <para>This field is now obsolete.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.PCE_AlignTops_ToolTip">
             <summary>
-                <para>This field is now obsolete.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.PCE_DatePrinted_ToolTip">
             <summary>
-                <para>This field is now obsolete.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.PCE_FontButton">
             <summary>
-                <para>This field is now obsolete.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.PCE_FooterLabel">
             <summary>
-                <para>This field is now obsolete.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.PCE_HeaderLabel">
             <summary>
-                <para>This field is now obsolete.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.PCE_Image_ToolTip">
             <summary>
-                <para>This field is now obsolete.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.PCE_PageContentEditor_Caption">
             <summary>
-                <para>This field is now obsolete.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.PCE_PageNumber_ToolTip">
             <summary>
-                <para>This field is now obsolete.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.PCE_PageOfPages_ToolTip">
             <summary>
-                <para>This field is now obsolete.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.PCE_TimePrinted_ToolTip">
             <summary>
-                <para>This field is now obsolete.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.PCE_UserName_ToolTip">
             <summary>
-                <para>This field is now obsolete.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.PPF_Preview_Caption">
             <summary>
-                <para>This field is now obsolete. Use the <b>PreviewForm_Caption</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -35311,8 +35266,7 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.SB_CurrentPageNo">
             <summary>
-                <para>This field is now obsolete. Use the <b>SB_PageOfPages</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -35327,8 +35281,7 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.SB_PageInfo_OF">
             <summary>
-                <para>This field is now obsolete. Use the <b>SB_PageInfo</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -35359,8 +35312,7 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.SB_TotalPageNo">
             <summary>
-                <para>This field is now obsolete. Use the <b>SB_PageOfPages</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -35399,8 +35351,7 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.ScalePopup_GroupText">
             <summary>
-                <para>"<b>Scaling</b>"
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -35431,360 +35382,315 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_Arrow">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_BackslantLine">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_BottomArrow">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_Brace">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_Bracket">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_Cross">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_EightPointStar">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_Ellipse">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_FivePointStar">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_FourPointStar">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_Hexagon">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_HorizontalLine">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_LeftArrow">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_Line">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_Octagon">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_Pentagon">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_Polygon">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_Rectangle">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_RightArrow">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_SixPointStar">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_SlantLine">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_Square">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_Star">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_ThreePointStar">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_TopArrow">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_Triangle">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.Shapes_VerticalLine">
             <summary>
-                <para>Use a corresponding <see cref="T:DevExpress.XtraPrinting.Shape.Native.ShapeId"/> enumeration value instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_BackGroundBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_Backgr</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_ClosePreviewBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_Close</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_CustomizeBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_Customize</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_DocMap_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_Map</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_EditPageHFBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_EditPageHF</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_ExportBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_Export</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_FirstPageBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_FirstPage</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_HandToolBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_HandTool</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_LastPageBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_LastPage</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_MagnifierBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_Magnifier</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_MultiplePagesBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_MultiplePages</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_NextPageBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_NextPage</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_PageSetupBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_PageSetup</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_PreviousPageBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_PreviousPage</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_PrintBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_Print</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_PrintDirectBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_PrintDirect</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_SearchBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_Search</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_SendBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_Send</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -36015,32 +35921,28 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_Watermark_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_Watermark</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_ZoomBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_Zoom</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_ZoomInBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_ZoomIn</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.TB_ZoomOutBtn_ToolTip">
             <summary>
-                <para>This field is now obsolete. Use the <b>TB_TTip_ZoomOut</b> field, instead.
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -36153,16 +36055,14 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.WMForm_PageRangeRgrItem_All">
             <summary>
-                <para>"<b>&#38;All</b>"
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.WMForm_PageRangeRgrItem_Pages">
             <summary>
-                <para>"<b>&#38;Pages:</b>"
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -36289,16 +36189,14 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.WMForm_ZOrderRgrItem_Behind">
             <summary>
-                <para>"<b>&#38;Behind"</b>
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
         </member>
         <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.WMForm_ZOrderRgrItem_InFront">
             <summary>
-                <para>"<b>In &#38;front</b>"
-</para>
+                <para>For internal use.</para>
             </summary>
 
 
@@ -36950,15 +36848,12 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to an empty
         </member>
         <member name="M:DevExpress.XtraPrinting.BrickStyle.SwapRightAndLeftSides(DevExpress.XtraPrinting.BorderSide)">
             <summary>
-                <para>For internal use.
-</para>
+                <para>For internal use.</para>
             </summary>
             <param name="sides">
-		One or more <see cref="T:DevExpress.XtraPrinting.BorderSide"/> enumeration values.
-
+		 
             </param>
-            <returns>One or more <see cref="T:DevExpress.XtraPrinting.BorderSide"/> enumeration values.
-</returns>
+            <returns> </returns>
 
 
         </member>

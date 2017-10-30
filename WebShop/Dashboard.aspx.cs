@@ -53,5 +53,30 @@ namespace WebShop
                 
             }
         }
+
+        protected void btnFormasPago_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/FormasPago.aspx");
+        }
+
+        protected void btnClientes_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Clientes.aspx");
+        }
+
+        protected void btnVentas_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Ventas.aspx");
+        }
+
+        protected void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Usuarios.aspx");
+        }
+
+        protected void btnSaldoActual_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Balance.aspx");
+        }
     }
 }

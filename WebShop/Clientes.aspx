@@ -4,7 +4,8 @@
     <div>
         <table style="width:100%;">
             <tr>
-                <th><div align="center"><h1>Datos de los clientes actualmente registrados</h1></div></th>
+                <th><div align="center"><img style="float: left;" src="Images/sistema/Clientes.png" alt="Ventas" /><h1>Clientes registrados en WebShop</h1></div>
+                </th>
             </tr>
             <tr>
                 <td>

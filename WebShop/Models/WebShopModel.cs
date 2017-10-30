@@ -12,7 +12,9 @@ namespace WebShop.Models
 {
     public class WebShopModel
     {
-        private readonly string _cadenaConexion = @"Server = DESKTOP-88ONNGE; Database = WebShop; Trusted_Connection = True;";
+        //private readonly string _cadenaConexion = @"Server = DESKTOP-88ONNGE; Database = WebShop; Trusted_Connection = True;";
+
+        private readonly string _cadenaConexion = @"Server = VICTORZ40; Database = WebShop; Trusted_Connection = True;";
 
         Kernel _kernel = new Kernel();
 
@@ -169,7 +171,7 @@ namespace WebShop.Models
             {
                 using (cnn = new SqlConnection(_cadenaConexion))
                 {
-                    string query = "INSERT INTO Carrito(IdProducto, Precio, Ticket, Usuario) VALUES (@a, @b, @c, @d)";
+                    string query = "INSERT INTO Carrito(IdProducto, Precio, Ticket, Usuario) VALUES (@a, @b, @c, @d);";
 
                     cnn.Open();
 
@@ -188,7 +190,7 @@ namespace WebShop.Models
             }
         }
 
-        public void ObtenerFormasPago(ASPxDropDownEdit aRellenar)
+        public void ObtenerFormasPago(ASPxComboBox aRellenar)
         {
             try
             {
@@ -201,13 +203,12 @@ namespace WebShop.Models
                     cmd = new SqlCommand(query, cnn);
 
                     leer = cmd.ExecuteReader();
-                    
-                    aRellenar.Items
 
+                    aRellenar.Items.Clear();
 
                     while (leer.Read())
                     {
-
+                        aRellenar.Items.Add(leer[0].ToString());
                     }
 
                     leer.Close();
@@ -216,6 +217,84 @@ namespace WebShop.Models
             catch (Exception)
             {
                 
+            }
+        }
+
+        public bool AgregarFormaPago(TiposPago formaPago)
+        {
+            try
+            {
+                using (cnn = new SqlConnection(_cadenaConexion))
+                {
+                    string query = "INSERT INTO TiposPago(Descripcion, RequiereTarjeta) VALUES (@a, @b);";
+
+                    cnn.Open();
+
+                    cmd = new SqlCommand(query, cnn);
+                    cmd.Parameters.AddWithValue("@a", formaPago.Descripcion);
+                    cmd.Parameters.AddWithValue("@b", formaPago.RequiereTarjeta);
+
+                    return cmd.ExecuteNonQuery() > 0 ? true : false;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public bool BorrarFormaPago(string formaPago)
+        {
+            try
+            {
+                using (cnn = new SqlConnection(_cadenaConexion))
+                {
+                    string query = "DELETE From TiposPago WHERE Descripcion = @a;";
+
+                    cnn.Open();
+
+                    cmd = new SqlCommand(query, cnn);
+                    cmd.Parameters.AddWithValue("@a", formaPago);
+
+                    return cmd.ExecuteNonQuery() > 0 ? true : false;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public decimal ObtenerSaldo(Banco datos)
+        {
+            try
+            {
+                using (cnn = new SqlConnection(_cadenaConexion))
+                {
+                    string query = "SELECT Saldo FROM Banco WHERE Tarjeta = @a;";
+
+                    cnn.Open();
+
+                    cmd = new SqlCommand(query, cnn);
+                    cmd.Parameters.AddWithValue("@a", datos.Tarjeta);
+
+                    leer = cmd.ExecuteReader();
+
+                    decimal saldo = 0m;
+
+                    while (leer.Read())
+                    {
+                        saldo = Convert.ToDecimal(leer[0]);
+                    }
+
+                    leer.Close();
+
+                    return saldo;
+                }
+            }
+            catch (Exception)
+            {
+                return 0m;
             }
         }
     }

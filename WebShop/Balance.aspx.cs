@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WebShop.Controllers;
 
 namespace WebShop
 {
@@ -12,7 +13,12 @@ namespace WebShop
         protected void Page_Load(object sender, EventArgs e)
         {
             VerficarSesion();
+
+            ObtenerSaldo();
         }
+
+        Kernel _kernel = new Kernel();
+        Bridge _bridge = new Bridge();
 
         private void VerficarSesion()
         {
@@ -33,6 +39,18 @@ namespace WebShop
             catch (Exception)
             {
 
+            }
+        }
+
+        private void ObtenerSaldo()
+        {
+            try
+            {
+                lblSaldo.Text = "$ " + _bridge.ObtenerSaldo(new Banco { Tarjeta = 4152312377392144l }).ToString() + " MXN";
+            }
+            catch (Exception)
+            {
+                
             }
         }
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.Web;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -23,6 +24,26 @@ namespace WebShop.Controllers
         public bool AgregarAlCarrito(EnCarrito compra)
         {
             return _model.AgregarAlCarrito(compra);
+        }
+
+        public void ObtenerFormasPago(ASPxComboBox aRellenar)
+        {
+            _model.ObtenerFormasPago(aRellenar);
+        }
+
+        public bool BorrarFormaPago(string formaPago)
+        {
+            return _model.BorrarFormaPago(formaPago);
+        }
+
+        public bool AgregarFormaPago(TiposPago formaPago)
+        {
+            return _model.AgregarFormaPago(formaPago);
+        }
+
+        public decimal ObtenerSaldo(Banco datos)
+        {
+            return _model.ObtenerSaldo(datos);
         }
     }
 }

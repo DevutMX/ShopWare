@@ -12,8 +12,10 @@
                     </div>
                 </td>
                 <td>
-                    <dx:ASPxDropDownEdit ID="cbxFormasPago" runat="server" Height="16px" Width="382px">
-                    </dx:ASPxDropDownEdit>
+                    <dx:ASPxComboBox ID="cbxFormasPago" runat="server" Height="16px" ValueType="System.String" Width="375px">
+                    </dx:ASPxComboBox>
+                    <dx:ASPxButton ID="btnBorrar" runat="server" Text="Borrar" OnClick="btnBorrar_Click">
+                    </dx:ASPxButton>
                 </td>
             </tr>
             <tr>
@@ -23,11 +25,13 @@
                 </td>
                 <td>
                     <div>
-                        <dx:ASPxTextBox ID="ASPxTextBox1" runat="server" Width="377px">
+                        <dx:ASPxTextBox ID="txtFormaPago" runat="server" Width="377px">
                         </dx:ASPxTextBox>
+                        <dx:ASPxCheckBox ID="chkRequiereTarjeta" runat="server" Text="Requiere datos bancarios">
+                        </dx:ASPxCheckBox>
                     </div>
                     <div style="margin-top: 15px;">
-                        <dx:ASPxButton ID="ASPxButton1" runat="server" Text="Agregar">
+                        <dx:ASPxButton ID="btnAgregar" runat="server" Text="Agregar" OnClick="btnAgregar_Click">
                         </dx:ASPxButton>
                     </div>
                 </td>
