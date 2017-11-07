@@ -25,7 +25,7 @@ namespace WebShop
             {
                 if (Session["Usuario"] != null && Session["IdUsuario"] != null && Session["Privilegio"] != null)
                 {
-                    if (_bridge.AgregarAlCarrito(new EnCarrito { IdProducto = producto, Precio = precio, Usuario = Convert.ToInt32(Session["IdUsuario"]), Ticket = "WebShop-" + DateTime.Now.ToString("ddMMyy") + "-DMX" }))
+                    if (_bridge.AgregarAlCarrito(new EnCarrito { IdProducto = producto, Precio = precio, Pagado = 0, Usuario = Convert.ToInt32(Session["IdUsuario"]), Ticket = "WebShop-" + DateTime.Now.ToString("ddMMyy") + "-DMX" }))
                     {
                         _kernel.MessageBox("Se ha agregado " + nombre + " al carrito.", this, this);
                     }

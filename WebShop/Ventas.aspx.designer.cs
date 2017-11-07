@@ -13,12 +13,12 @@ namespace WebShop {
     public partial class Ventas {
         
         /// <summary>
-        /// Control ASPxGridView1.
+        /// Control gdvVentas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxGridView ASPxGridView1;
+        protected global::DevExpress.Web.ASPxGridView gdvVentas;
     }
 }

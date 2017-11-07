@@ -68,6 +68,7 @@ namespace WebShop.Controllers
         public int Id { get; set; }
         public int IdProducto { get; set; }
         public decimal Precio { get; set; }
+        public int Pagado { get; set; }
         public string Ticket { get; set; }
         public int Usuario { get; set; }
     }

@@ -45,5 +45,25 @@ namespace WebShop.Controllers
         {
             return _model.ObtenerSaldo(datos);
         }
+
+        public void ListarClientes(ASPxGridView aRellenar)
+        {
+            _model.ListarClientes(aRellenar);
+        }
+
+        public void ListarUsuarios(ASPxGridView aRellenar)
+        {
+            _model.ListarUsuarios(aRellenar);
+        }
+
+        public void ListarVentas(ASPxGridView aRellenar)
+        {
+            _model.ListarVentas(aRellenar);
+        }
+
+        public void ListarCarrito(ASPxGridView aRellenar, int usuario)
+        {
+            _model.ListarCarrito(aRellenar, usuario);
+        }
     }
 }

@@ -171,15 +171,16 @@ namespace WebShop.Models
             {
                 using (cnn = new SqlConnection(_cadenaConexion))
                 {
-                    string query = "INSERT INTO Carrito(IdProducto, Precio, Ticket, Usuario) VALUES (@a, @b, @c, @d);";
+                    string query = "INSERT INTO Carrito(IdProducto, Precio, Pagado, Ticket, Usuario) VALUES (@a, @b, @c, @d, @e);";
 
                     cnn.Open();
 
                     cmd = new SqlCommand(query, cnn);
                     cmd.Parameters.AddWithValue("@a", compra.IdProducto);
                     cmd.Parameters.AddWithValue("@b", compra.Precio);
-                    cmd.Parameters.AddWithValue("@c", compra.Ticket);
-                    cmd.Parameters.AddWithValue("@d", compra.Usuario);
+                    cmd.Parameters.AddWithValue("c", compra.Pagado);
+                    cmd.Parameters.AddWithValue("@d", compra.Ticket);
+                    cmd.Parameters.AddWithValue("@e", compra.Usuario);
 
                     return cmd.ExecuteNonQuery() > 0 ? true : false;
                 }
@@ -216,7 +217,7 @@ namespace WebShop.Models
             }
             catch (Exception)
             {
-                
+
             }
         }
 
@@ -295,6 +296,124 @@ namespace WebShop.Models
             catch (Exception)
             {
                 return 0m;
+            }
+        }
+
+        public void ListarCarrito(ASPxGridView aRellenar, int usuario)
+        {
+            try
+            {
+                using (cnn = new SqlConnection(_cadenaConexion))
+                {
+                    string query = "SELECT Carrito.IdProducto as 'Cod. Producto', Carrito.Precio, Ticket, Usuarios.Usuario FROM Carrito, Usuarios WHERE Carrito.Ticket = @a AND Carrito.Usuario = @b AND Carrito.Pagado = 0 AND Usuarios.Id = Carrito.Usuario";
+
+                    cnn.Open();
+
+                    cmd = new SqlCommand(query, cnn);
+                    cmd.Parameters.AddWithValue("@a", "WebShop-" + DateTime.Now.ToString("ddMMyy") + "-DMX");
+                    cmd.Parameters.AddWithValue("@b", usuario);
+
+                    tabla = new DataTable();
+
+                    adaptador = new SqlDataAdapter(cmd);
+
+                    adaptador.Fill(tabla);
+
+                    aRellenar.DataSource = tabla;
+
+                    aRellenar.DataBind();
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        public void ListarClientes(ASPxGridView aRellenar)
+        {
+            try
+            {
+                using (cnn = new SqlConnection(_cadenaConexion))
+                {
+                    string query = "SELECT Id, Usuario, Nombre, Apellidos, Telefono, Domicilio, Foto FROM DatosClientes;";
+
+                    cnn.Open();
+
+                    cmd = new SqlCommand(query, cnn);
+
+                    tabla = new DataTable();
+
+                    adaptador = new SqlDataAdapter(cmd);
+
+                    adaptador.Fill(tabla);
+
+                    aRellenar.DataSource = tabla;
+
+                    aRellenar.DataBind();
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        public void ListarUsuarios(ASPxGridView aRellenar)
+        {
+            try
+            {
+                using (cnn = new SqlConnection(_cadenaConexion))
+                {
+                    string query = "SELECT Id, Usuario, Correo, Privilegio FROM Usuarios;";
+
+                    cnn.Open();
+
+                    cmd = new SqlCommand(query, cnn);
+
+                    tabla = new DataTable();
+
+                    adaptador = new SqlDataAdapter(cmd);
+
+                    adaptador.Fill(tabla);
+
+                    aRellenar.DataSource = tabla;
+
+                    aRellenar.DataBind();
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        public void ListarVentas(ASPxGridView aRellenar)
+        {
+            try
+            {
+                using (cnn = new SqlConnection(_cadenaConexion))
+                {
+                    string query = "SELECT Venta.Ticket as 'Ticket', Venta.Total as 'Total', TiposPago.Descripcion as 'Forma de pago', DatosClientes.Nombre as 'Nombre', DatosClientes.Apellidos as 'Apellidos' FROM Venta, TiposPago, DatosClientes WHERE TiposPago.Tipo = Venta.TipoPago AND DatosClientes.Id = Venta.Cliente;";
+
+                    cnn.Open();
+
+                    cmd = new SqlCommand(query, cnn);
+
+                    tabla = new DataTable();
+
+                    adaptador = new SqlDataAdapter(cmd);
+
+                    adaptador.Fill(tabla);
+
+                    aRellenar.DataSource = tabla;
+
+                    aRellenar.DataBind();
+                }
+            }
+            catch (Exception)
+            {
+
             }
         }
     }

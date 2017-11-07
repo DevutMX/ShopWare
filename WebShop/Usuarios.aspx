@@ -9,7 +9,7 @@
             </tr>
             <tr>
                 <td>
-                    <dx:ASPxGridView Width="100%" ID="ASPxGridView1" runat="server">
+                    <dx:ASPxGridView Width="100%" ID="gdvUsuarios" runat="server">
                         <SettingsPager Visible="False">
                         </SettingsPager>
                         <SettingsDataSecurity AllowDelete="False" AllowEdit="False" AllowInsert="False" />

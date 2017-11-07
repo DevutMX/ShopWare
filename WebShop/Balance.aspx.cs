@@ -46,7 +46,7 @@ namespace WebShop
         {
             try
             {
-                lblSaldo.Text = "$ " + _bridge.ObtenerSaldo(new Banco { Tarjeta = 4152312377392144l }).ToString() + " MXN";
+                lblSaldo.Text = "$ " + _bridge.ObtenerSaldo(new Banco { Tarjeta = 4152312377392144L }).ToString() + " MXN";
             }
             catch (Exception)
             {

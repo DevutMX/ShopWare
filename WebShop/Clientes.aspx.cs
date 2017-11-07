@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WebShop.Controllers;
 
 namespace WebShop
 {
@@ -12,7 +13,11 @@ namespace WebShop
         protected void Page_Load(object sender, EventArgs e)
         {
             VerficarSesion();
+
+            _bridge.ListarClientes(gdvClientes);
         }
+
+        Bridge _bridge = new Bridge();
 
         private void VerficarSesion()
         {
