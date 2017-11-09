@@ -169,25 +169,131 @@ namespace WebShop.Models
         {
             try
             {
-                using (cnn = new SqlConnection(_cadenaConexion))
+                int cantidad = CantidadProductoCarrito(compra.IdProducto, compra.Usuario);
+
+                if (cantidad <= 0)
                 {
-                    string query = "INSERT INTO Carrito(IdProducto, Precio, Pagado, Ticket, Usuario) VALUES (@a, @b, @c, @d, @e);";
+                    using (cnn = new SqlConnection(_cadenaConexion))
+                    {
+                        string query = "INSERT INTO Carrito(IdProducto, Precio, Pagado, Ticket, Cantidad, Usuario) VALUES (@a, @b, @c, @d, @e, @f);";
 
-                    cnn.Open();
+                        cnn.Open();
 
-                    cmd = new SqlCommand(query, cnn);
-                    cmd.Parameters.AddWithValue("@a", compra.IdProducto);
-                    cmd.Parameters.AddWithValue("@b", compra.Precio);
-                    cmd.Parameters.AddWithValue("c", compra.Pagado);
-                    cmd.Parameters.AddWithValue("@d", compra.Ticket);
-                    cmd.Parameters.AddWithValue("@e", compra.Usuario);
+                        cmd = new SqlCommand(query, cnn);
+                        cmd.Parameters.AddWithValue("@a", compra.IdProducto);
+                        cmd.Parameters.AddWithValue("@b", compra.Precio);
+                        cmd.Parameters.AddWithValue("c", compra.Pagado);
+                        cmd.Parameters.AddWithValue("@d", compra.Ticket);
+                        cmd.Parameters.AddWithValue("@e", 1);
+                        cmd.Parameters.AddWithValue("@f", compra.Usuario);
 
-                    return cmd.ExecuteNonQuery() > 0 ? true : false;
+                        return cmd.ExecuteNonQuery() > 0 ? true : false;
+                    }
+                }
+
+                else
+                {
+                    using (cnn = new SqlConnection(_cadenaConexion))
+                    {
+                        string query = "UPDATE Carrito SET Cantidad = @a WHERE IdProducto = @b AND Ticket = @c AND Usuario = @d;";
+
+                        cnn.Open();
+
+                        cmd = new SqlCommand(query, cnn);
+                        cmd.Parameters.AddWithValue("@a", cantidad + 1);
+                        cmd.Parameters.AddWithValue("@b", compra.IdProducto);
+                        cmd.Parameters.AddWithValue("@c", compra.Ticket);
+                        cmd.Parameters.AddWithValue("@d", compra.Usuario);
+
+                        return cmd.ExecuteNonQuery() > 0 ? true : false;
+                    }
                 }
             }
             catch (Exception)
             {
                 return false;
+            }
+        }
+
+        public bool QuitarDelCarrito(EnCarrito compra)
+        {
+            try
+            {
+                int cantidad = CantidadProductoCarrito(compra.IdProducto, compra.Usuario);
+
+                if (cantidad <= 1)
+                {
+                    using (cnn = new SqlConnection(_cadenaConexion))
+                    {
+                        string query = "DELETE FROM Carrito WHERE Carrito.IdProducto = @a AND Carrito.Ticket = @b AND Usuario = @c;";
+
+                        cnn.Open();
+
+                        cmd = new SqlCommand(query, cnn);
+                        cmd.Parameters.AddWithValue("@a", compra.IdProducto);
+                        cmd.Parameters.AddWithValue("@b", compra.Ticket);
+                        cmd.Parameters.AddWithValue("@c", compra.Usuario);
+
+                        return cmd.ExecuteNonQuery() > 0 ? true : false;
+                    }
+                }
+
+                else
+                {
+                    using (cnn = new SqlConnection(_cadenaConexion))
+                    {
+                        string query = "UPDATE Carrito SET Cantidad = @a WHERE IdProducto = @b AND Ticket = @c AND Usuario = @d;";
+
+                        cnn.Open();
+
+                        cmd = new SqlCommand(query, cnn);
+                        cmd.Parameters.AddWithValue("@a", cantidad - 1);
+                        cmd.Parameters.AddWithValue("@b", compra.IdProducto);
+                        cmd.Parameters.AddWithValue("@c", compra.Ticket);
+                        cmd.Parameters.AddWithValue("@d", compra.Usuario);
+
+                        return cmd.ExecuteNonQuery() > 0 ? true : false;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public int CantidadProductoCarrito(int idproducto, int usuario)
+        {
+            try
+            {
+                using (cnn = new SqlConnection(_cadenaConexion))
+                {
+                    string query = "SELECT Carrito.Cantidad FROM Carrito, Usuarios WHERE Carrito.IdProducto = @a AND Carrito.Ticket = @b AND Carrito.Usuario = @c AND Carrito.Pagado = 0 AND Usuarios.Id = Carrito.Usuario";
+
+                    cnn.Open();
+
+                    cmd = new SqlCommand(query, cnn);
+                    cmd.Parameters.AddWithValue("@a", idproducto);
+                    cmd.Parameters.AddWithValue("@b", "WebShop-" + DateTime.Now.ToString("ddMMyy") + "-DMX");
+                    cmd.Parameters.AddWithValue("@c", usuario);
+
+                    leer = cmd.ExecuteReader();
+
+                    int cantidad = 0;
+
+                    while (leer.Read())
+                    {
+                        cantidad = Convert.ToInt32(leer[0]);
+                    }
+
+                    leer.Close();
+
+                    return cantidad;
+                }
+            }
+            catch (Exception)
+            {
+                return 0;
             }
         }
 
@@ -266,6 +372,39 @@ namespace WebShop.Models
             }
         }
 
+        public bool VerificarUsoDatosBancarios(string formaPago)
+        {
+            try
+            {
+                using (cnn = new SqlConnection(_cadenaConexion))
+                {
+                    string query = "SELECT RequiereTarjeta From TiposPago WHERE Descripcion = @a";
+
+                    cnn.Open();
+
+                    cmd = new SqlCommand(query, cnn);
+                    cmd.Parameters.AddWithValue("@a", formaPago);
+
+                    leer = cmd.ExecuteReader();
+
+                    int requiere = 0;
+
+                    while (leer.Read())
+                    {
+                        requiere = Convert.ToInt32(leer[0]);
+                    }
+
+                    leer.Close();
+
+                    return requiere > 0 ? true : false;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
         public decimal ObtenerSaldo(Banco datos)
         {
             try
@@ -305,7 +444,7 @@ namespace WebShop.Models
             {
                 using (cnn = new SqlConnection(_cadenaConexion))
                 {
-                    string query = "SELECT Carrito.IdProducto as 'Cod. Producto', Carrito.Precio, Ticket, Usuarios.Usuario FROM Carrito, Usuarios WHERE Carrito.Ticket = @a AND Carrito.Usuario = @b AND Carrito.Pagado = 0 AND Usuarios.Id = Carrito.Usuario";
+                    string query = "SELECT Carrito.IdProducto as 'Cod. Producto', Carrito.Precio, Carrito.Cantidad, Usuarios.Usuario FROM Carrito, Usuarios WHERE Carrito.Ticket = @a AND Carrito.Usuario = @b AND Carrito.Pagado = 0 AND Usuarios.Id = Carrito.Usuario";
 
                     cnn.Open();
 

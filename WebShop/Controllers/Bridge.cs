@@ -36,6 +36,11 @@ namespace WebShop.Controllers
             return _model.BorrarFormaPago(formaPago);
         }
 
+        public bool VerificarUsoDatosBancarios(string formaPago)
+        {
+            return _model.VerificarUsoDatosBancarios(formaPago);
+        }
+
         public bool AgregarFormaPago(TiposPago formaPago)
         {
             return _model.AgregarFormaPago(formaPago);
