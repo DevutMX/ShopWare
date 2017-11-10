@@ -16,12 +16,50 @@
             </dx:ASPxLabel>
         </p>
     </div>
-    <div align="center">
-        <dx:ASPxGridView Width="100%" ID="gdvCarrito" runat="server">
+
+    <%--<div align="center">
+        <dx:ASPxGridView width="80%" ID="gdvCarrito" runat="server">
             <SettingsPager Visible="False">
             </SettingsPager>
             <SettingsDataSecurity AllowDelete="False" AllowEdit="False" AllowInsert="False" />
         </dx:ASPxGridView>
+    </div>--%>
+
+    <div align="center">
+        <dx:ASPxGridView width="80%" ID="gdvCarrito" runat="server">
+            <SettingsPager Visible="False">
+            </SettingsPager>
+            <SettingsDataSecurity AllowDelete="False" AllowEdit="False" AllowInsert="False" />
+        </dx:ASPxGridView>
+    </div>
+
+    <div align="center">
+        <table>
+            <tr>
+                <td>
+                    <p style="float:left;">Modificar producto:</p>
+                    <div style="float:left;">
+                        <dx:ASPxTextBox  ID="ASPxTextBox5" runat="server" Width="50px">
+                        </dx:ASPxTextBox>
+                    </div>
+                    <div  style="float:left;">
+                        <dx:ASPxButton Paddings-Padding="4" ID="ASPxButton1" runat="server" Text="-" >
+                        </dx:ASPxButton>
+                    </div>
+                    <div style="float:left;">
+                        <dx:ASPxButton Paddings-Padding="4" ID="ASPxButton2" runat="server" Text="+" >
+                        </dx:ASPxButton>
+                    </div>
+                    <div>
+                        <dx:ASPxButton Paddings-Padding="4" ID="ASPxButton3" runat="server" Text="X" >
+                        </dx:ASPxButton>
+                    </div>
+                </td>
+                <td>
+
+                </td>
+            </tr>
+        </table>
     </div>
 
     <asp:Panel ID="pnlTotal" runat="server" Visible="False">
@@ -54,7 +92,7 @@
                 </td>
                 <td>
                     <div align="center">
-                        <dx:ASPxButton ID="btnPagar" runat="server" Text="Pagar" Visible="False">
+                        <dx:ASPxButton ID="btnPagar" runat="server" Text="Pagar" Visible="False" OnClick="btnPagar_Click">
                         </dx:ASPxButton>
                     </div>
                 </td>

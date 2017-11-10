@@ -24,9 +24,16 @@ namespace WebShop {
             {
                 if (Session["Usuario"] != null && Session["IdUsuario"] != null && Session["Privilegio"] != null)
                 {
-                    if(_bridge.AgregarAlCarrito(new EnCarrito { IdProducto = producto, Precio = precio, Pagado = 0, Usuario = Convert.ToInt32(Session["IdUsuario"]), Ticket = "WebShop-" + DateTime.Now.ToString("ddMMyy") + "-DMX"}))
+                    string resultado = _bridge.AgregarAlCarrito(new EnCarrito { IdProducto = producto, Precio = precio, Pagado = 0, Usuario = Convert.ToInt32(Session["IdUsuario"]), Ticket = "WebShop-" + DateTime.Now.ToString("ddMMyy") + "-DMX" });
+
+                    if (resultado == "Agregado")
                     {
                         _kernel.MessageBox("Se ha agregado " + nombre + " al carrito.", this, this);
+                    }
+
+                    else if(resultado == "Existencias insuficientes")
+                    {
+                        _kernel.MessageBox("No se pudo agregar " + nombre + " al carrito, debido a existencias insuficientes.", this, this);
                     }
 
                     else

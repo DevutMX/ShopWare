@@ -21,7 +21,7 @@ namespace WebShop.Controllers
             return _model.ObtenerAcceso(cliente);
         }
 
-        public bool AgregarAlCarrito(EnCarrito compra)
+        public string AgregarAlCarrito(EnCarrito compra)
         {
             return _model.AgregarAlCarrito(compra);
         }
