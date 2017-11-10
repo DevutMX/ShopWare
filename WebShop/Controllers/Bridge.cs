@@ -21,9 +21,19 @@ namespace WebShop.Controllers
             return _model.ObtenerAcceso(cliente);
         }
 
-        public string AgregarAlCarrito(EnCarrito compra)
+        public string AgregarAlCarrito(EnCarrito compra, int idproducto, int usuario)
         {
-            return _model.AgregarAlCarrito(compra);
+            return _model.AgregarAlCarrito(compra, idproducto, usuario);
+        }
+
+        public bool QuitarDelCarrito(int idproducto, int usuario)
+        {
+            return _model.QuitarDelCarrito(idproducto, usuario);
+        }
+
+        public bool EliminarDelCarrito(int idproducto, int usuario)
+        {
+            return _model.EliminarDelCarrito(idproducto, usuario);
         }
 
         public void ObtenerFormasPago(ASPxComboBox aRellenar)
@@ -69,6 +79,11 @@ namespace WebShop.Controllers
         public void ListarCarrito(ASPxGridView aRellenar, int usuario)
         {
             _model.ListarCarrito(aRellenar, usuario);
+        }
+
+        public bool RegistrarVenta(Venta venta)
+        {
+            return _model.RegistrarVenta(venta);
         }
     }
 }

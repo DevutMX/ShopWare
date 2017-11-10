@@ -40,40 +40,49 @@ namespace WebShop {
         protected global::DevExpress.Web.ASPxGridView gdvCarrito;
         
         /// <summary>
-        /// Control ASPxTextBox5.
+        /// Control pnlModificaciones.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox ASPxTextBox5;
+        protected global::System.Web.UI.WebControls.Panel pnlModificaciones;
         
         /// <summary>
-        /// Control ASPxButton1.
+        /// Control txtIdProducto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxButton ASPxButton1;
+        protected global::DevExpress.Web.ASPxTextBox txtIdProducto;
         
         /// <summary>
-        /// Control ASPxButton2.
+        /// Control btnQuitar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxButton ASPxButton2;
+        protected global::DevExpress.Web.ASPxButton btnQuitar;
         
         /// <summary>
-        /// Control ASPxButton3.
+        /// Control btnAgregar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxButton ASPxButton3;
+        protected global::DevExpress.Web.ASPxButton btnAgregar;
+        
+        /// <summary>
+        /// Control btnEliminar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxButton btnEliminar;
         
         /// <summary>
         /// Control pnlTotal.
@@ -148,40 +157,40 @@ namespace WebShop {
         protected global::DevExpress.Web.ASPxTextBox txtTarjeta;
         
         /// <summary>
-        /// Control ASPxTextBox1.
+        /// Control txtNombreTarjeta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox ASPxTextBox1;
+        protected global::DevExpress.Web.ASPxTextBox txtNombreTarjeta;
         
         /// <summary>
-        /// Control ASPxTextBox2.
+        /// Control txtMes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox ASPxTextBox2;
+        protected global::DevExpress.Web.ASPxTextBox txtMes;
         
         /// <summary>
-        /// Control ASPxTextBox3.
+        /// Control txtAno.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox ASPxTextBox3;
+        protected global::DevExpress.Web.ASPxTextBox txtAno;
         
         /// <summary>
-        /// Control ASPxTextBox4.
+        /// Control txtCVV.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox ASPxTextBox4;
+        protected global::DevExpress.Web.ASPxTextBox txtCVV;
         
         /// <summary>
         /// Control btnPagarTarjeta.

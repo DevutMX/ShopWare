@@ -24,6 +24,8 @@ namespace WebShop
 
         Bridge _bridge = new Bridge();
 
+        Kernel _kernel = new Kernel();
+
         private void VerficarSesion()
         {
             try
@@ -63,6 +65,8 @@ namespace WebShop
                     lblTotal.Text = "$ " + total.ToString();
 
                     pnlTotal.Visible = true;
+
+                    pnlModificaciones.Visible = true;
 
                     lblTicket.Text = "Ticket: WebShop-" + DateTime.Now.ToString("ddMMyy") + "-DMX";
 
@@ -118,6 +122,199 @@ namespace WebShop
         protected void btnPagar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnQuitar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtIdProducto.Text != "")
+                {
+                    if (VerificarListado(Convert.ToInt32(txtIdProducto.Text)))
+                    {
+                        if (_bridge.QuitarDelCarrito(Convert.ToInt32(txtIdProducto.Text), Convert.ToInt32(Session["IdUsuario"])))
+                        {
+                            _kernel.MessageBox("Cantidad modificada", this, this);
+
+                            Response.Redirect(Request.Url.AbsoluteUri);
+                        }
+
+                        else
+                        {
+                            _kernel.MessageBox("Ocurrió un error al modificar la cantidad", this, this);
+
+                            Response.Redirect(Request.Url.AbsoluteUri);
+                        }
+                    }
+
+                    else
+                    {
+                        _kernel.MessageBox("El producto no esta agregado en el carrito", this, this);
+
+                        Response.Redirect(Request.Url.AbsoluteUri);
+                    }
+                }
+
+                else
+                {
+                    _kernel.MessageBox("Indique el codigo del producto a modificar", this, this);
+
+                    Response.Redirect(Request.Url.AbsoluteUri);
+                }
+            }
+            catch (Exception)
+            {
+                _kernel.MessageBox("El codigo del producto es inválido", this, this);
+
+                Response.Redirect(Request.Url.AbsoluteUri);
+            }
+        }
+
+        protected void btnAgregar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtIdProducto.Text != "")
+                {
+                    if (VerificarListado(Convert.ToInt32(txtIdProducto.Text)))
+                    {
+                        string resultado = _bridge.AgregarAlCarrito(null, Convert.ToInt32(txtIdProducto.Text), Convert.ToInt32(Session["IdUsuario"]));
+
+                        if (resultado == "Agregado")
+                        {
+                            _kernel.MessageBox("Se ha modificado la cantidad", this, this);
+
+                            Response.Redirect(Request.Url.AbsoluteUri);
+                        }
+
+                        else if (resultado == "Existencias insuficientes")
+                        {
+                            _kernel.MessageBox("No se pudo modificar el carrito, debido a existencias insuficientes.", this, this);
+
+                            Response.Redirect(Request.Url.AbsoluteUri);
+                        }
+
+                        else
+                        {
+                            _kernel.MessageBox("No se pudo modificar el producto", this, this);
+
+                            Response.Redirect(Request.Url.AbsoluteUri);
+                        }
+                    }
+
+                    else
+                    {
+                        _kernel.MessageBox("El producto no esta agregado en el carrito", this, this);
+
+                        Response.Redirect(Request.Url.AbsoluteUri);
+                    }
+                }
+
+                else
+                {
+                    _kernel.MessageBox("Indique el codigo del producto a modificar", this, this);
+
+                    Response.Redirect(Request.Url.AbsoluteUri);
+                }
+            }
+
+            catch (Exception)
+            {
+                _kernel.MessageBox("El codigo del producto es inválido", this, this);
+
+                Response.Redirect(Request.Url.AbsoluteUri);
+            }
+        }
+
+        protected void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtIdProducto.Text != "")
+                {
+                    if (VerificarListado(Convert.ToInt32(txtIdProducto.Text)))
+                    {
+                        if (_bridge.EliminarDelCarrito(Convert.ToInt32(txtIdProducto.Text), Convert.ToInt32(Session["IdUsuario"])))
+                        {
+                            _kernel.MessageBox("Se ha borrado el producto de tu carrito", this, this);
+
+                            Response.Redirect(Request.Url.AbsoluteUri);
+                        }
+
+                        else
+                        {
+                            _kernel.MessageBox("No se pudo eliminar el producto", this, this);
+
+                            Response.Redirect(Request.Url.AbsoluteUri);
+                        }
+                    }
+
+                    else
+                    {
+                        _kernel.MessageBox("El producto no esta agregado en el carrito", this, this);
+
+                        Response.Redirect(Request.Url.AbsoluteUri);
+                    }
+                }
+
+                else
+                {
+                    _kernel.MessageBox("Indique el codigo del producto a modificar", this, this);
+
+                    Response.Redirect(Request.Url.AbsoluteUri);
+                }
+            }
+            catch (Exception)
+            {
+                _kernel.MessageBox("El codigo del producto es inválido", this, this);
+
+                Response.Redirect(Request.Url.AbsoluteUri);
+            }
+        }
+
+        private bool VerificarListado(int idproducto)
+        {
+            try
+            {
+                if (gdvCarrito.VisibleRowCount > 0)
+                {
+                    for (int i = 0; i < gdvCarrito.VisibleRowCount; i++)
+                    {
+                        if (idproducto == Convert.ToInt32(gdvCarrito.GetRowValues(i, "Cod. Producto")))
+                        {
+                            return true;
+                        }
+                    }
+
+                    return false;
+                }
+
+                return false;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        protected void btnPagarTarjeta_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtTarjeta.Text == "" || txtNombreTarjeta.Text == "" || txtMes.Text == "" || txtAno.Text == "" || txtCVV.Text == "")
+                {
+                    _kernel.MessageBox("", this, this);
+                }
+
+                else
+                {
+
+                }
+            }
+            catch (Exception)
+            {
+                
+            }
         }
     }
 }

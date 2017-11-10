@@ -33,34 +33,41 @@
         </dx:ASPxGridView>
     </div>
 
-    <div align="center">
-        <table>
-            <tr>
-                <td>
-                    <p style="float:left;">Modificar producto:</p>
-                    <div style="float:left;">
-                        <dx:ASPxTextBox  ID="ASPxTextBox5" runat="server" Width="50px">
-                        </dx:ASPxTextBox>
-                    </div>
-                    <div  style="float:left;">
-                        <dx:ASPxButton Paddings-Padding="4" ID="ASPxButton1" runat="server" Text="-" >
-                        </dx:ASPxButton>
-                    </div>
-                    <div style="float:left;">
-                        <dx:ASPxButton Paddings-Padding="4" ID="ASPxButton2" runat="server" Text="+" >
-                        </dx:ASPxButton>
-                    </div>
-                    <div>
-                        <dx:ASPxButton Paddings-Padding="4" ID="ASPxButton3" runat="server" Text="X" >
-                        </dx:ASPxButton>
-                    </div>
-                </td>
-                <td>
-
-                </td>
-            </tr>
-        </table>
-    </div>
+    <asp:Panel ID="pnlModificaciones" runat="server" Visible="False">
+        <div align="center">
+            <table>
+                <tr>
+                    <td>
+                        <p style="float:left;">Modificar producto:</p>
+                    </td>
+                    <td>
+                        <div style="float:left;">
+                            <dx:ASPxTextBox  ID="txtIdProducto" runat="server" Width="50px">
+                            </dx:ASPxTextBox>
+                        </div>
+                    </td>
+                    <td>
+                        <div style="float:left;">
+                            <dx:ASPxButton Paddings-Padding="4" ID="btnQuitar" runat="server" Text="-" OnClick="btnQuitar_Click" >
+                            </dx:ASPxButton>
+                        </div>
+                    </td>
+                    <td>
+                        <div style="float:left;">
+                            <dx:ASPxButton Paddings-Padding="4" ID="btnAgregar" runat="server" Text="+" OnClick="btnAgregar_Click" >
+                            </dx:ASPxButton>
+                        </div>
+                    </td>
+                    <td>
+                        <div style="float:left;">
+                            <dx:ASPxButton Paddings-Padding="4" ID="btnEliminar" runat="server" Text="X" OnClick="btnEliminar_Click" >
+                            </dx:ASPxButton>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </asp:Panel>
 
     <asp:Panel ID="pnlTotal" runat="server" Visible="False">
     <div align="center">
@@ -117,31 +124,31 @@
                 <tr>
                     <td>Nombre:</td>
                     <td colspan="5">
-                        <dx:ASPxTextBox ID="ASPxTextBox1" runat="server" Width="100%">
+                        <dx:ASPxTextBox ID="txtNombreTarjeta" runat="server" Width="100%">
                         </dx:ASPxTextBox>
                     </td>
                 </tr>
                 <tr>
                     <td>Mes:</td>
                     <td>
-                        <dx:ASPxTextBox ID="ASPxTextBox2" runat="server" Width="100%">
+                        <dx:ASPxTextBox ID="txtMes" runat="server" Width="100%">
                         </dx:ASPxTextBox>
                     </td>
                     <td>Año:</td>
                     <td>
-                        <dx:ASPxTextBox ID="ASPxTextBox3" runat="server" Width="100%">
+                        <dx:ASPxTextBox ID="txtAno" runat="server" Width="100%">
                         </dx:ASPxTextBox>
                     </td>
                     <td>CVV:</td>
                     <td>
-                        <dx:ASPxTextBox ID="ASPxTextBox4" runat="server" Width="100%">
+                        <dx:ASPxTextBox ID="txtCVV" runat="server" Width="100%">
                         </dx:ASPxTextBox>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="6">
                         <div align="center">
-                            <dx:ASPxButton ID="btnPagarTarjeta" runat="server" Text="Pagar">
+                            <dx:ASPxButton ID="btnPagarTarjeta" runat="server" Text="Pagar" OnClick="btnPagarTarjeta_Click">
                             </dx:ASPxButton>
                         </div>
                     </td>

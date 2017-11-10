@@ -69,6 +69,7 @@ CREATE TABLE Carrito
 	Precio DECIMAL(10,2) NOT NULL,
 	Pagado bit not null,
 	Ticket VARCHAR(20) NOT NULL,
+	Cantidad integer not null,
 	Usuario INTEGER REFERENCES Usuarios(id)
 );
 
